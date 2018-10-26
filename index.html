@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="Simple Documentation for project NewsOcean.">
+    <meta name="author" content="GeniusOcean">
+
+    <title>Digital Signage Guide - Implementing Digital Signage using ChromeBox</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/genius.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper" style="background-color: #222222;">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        <img src="logo1.png" class="img-responsive logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#start">About this Guide</a>
+                </li>
+                <li>
+                 <a href="#need">What you need to get started</a>
+                </li>
+                <li>
+                 <a href="#management">Google Device Management</a>
+                </li>
+                <li>
+                    <a href="#enrollment">Device Enrollment</a>
+                </li>
+                <li>
+                  <a href="#Blood Donors">Chrome Sign Builder</a>
+                </li>
+                <li>
+                    <a href="#Blood Group">Blood Group</a>
+                </li>
+                <li>
+                    <a href="#page">Page Settings</a>
+                </li>
+                 <li>
+                    <a href="#social">Social Settings</a>
+                </li>
+                <li>
+                    <a href="#ads">Advertisement</a>
+                </li>
+                <li>
+                    <a href="#seo">SEO Tools</a>
+                </li>
+                <li>
+                    <a href="#settings">General Settings</a>
+                </li>
+              
+                <li>
+                    <a href="#subscribers">Subscribers</a>
+                </li>
+                <li>
+                    <a href="#developer">Support</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+<img src="images/signup.png" class="img-responsive" alt="Splash">
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="start" class="col-lg-12 about">
+                        <h1></i></a>Implementing Dignital Signage using Chrome Ecosystem</h1>
+<table>
+<tr>
+<td width="500"><img src="images/chrome-digital-signage.jpg" class="img-responsive" alt="Chrome Digital Signage" width="500"></td>
+<td valign="top">
+                        <p><h4>Intro</h4></p>
+                        <p>This is a step by step Guide on implementing Digital Signage using the Chrome Ecosystem, this guide is viable for implementing one device or numerous devices. On this guide we will make reference to the ChromeBox as our device of choice but this guide can also be used to implement digital signage using other Chrome OS devices such as Chromebit, Chromebase etc.</p>
+                        <p><strong>Created on :</strong> October 25th, 2018</p>
+                        
+                        <p><strong>By:</strong> <a href="https://github.com/kibachia" target="_blank">Peter W. Kibachia</a></p>
+                        <p><strong>Email:</strong> pwainainak@gmail.com</p>
+You can also find the latest update of this guide on;<br>
+<a href="https://github.com/kibachia/Digital-Signage-Guide" target="_blank">https://github.com/kibachia/Digital-Signage-Guide</a>
+</td>
+</tr>
+</table>                        
+                    </div>
+
+
+                    <div id="about" class="col-lg-12 about">
+                        <h1>About</h1>
+                        <p>Chromeboxes are secure, easy to manage and cost effective, making them ideal to display content and engage customers, clients or any other type of audience in any location.</p>
+<p>Chrome Sign Builder is a digital signage utility that lets you schedule and display content across your managed Chrome devices. With Chrome Sign Builder, you can use Chrome devices (such as Chromeboxes) as media players for digital signs.</p>
+<p>Chrome Sign Builder gives you a preview of the content that will be shown on the digital signs. While you can download and install Chrome Sign Builder on one of the same Chrome devices where it will be deployed, the deployment process is simpler if you install it on another computer.</p>
+
+                    </div>
+
+                   <div id="need" class="col-lg-12 about">
+
+                        <h1>What you need to get started</h1>
+<table>
+<tr>
+<td valign="top">                        
+<p>Chrome kiosk apps can run as kiosk-only applications where no user account is required. Kiosk apps give full control over the user's experience to the application itself, for example, allowing someone to use a virtual keyboard or setting up URL whitelists or blacklists.</p>
+<p><h4>Hardware</h4></p>
+<p>For hardware, you need a Chrome device and a display.</p>                                	<ul>
+    <li><span style='font-size:14px;font-family:"Arial","sans-serif"'>Chromebox: Asus, HP, Dell, AOPEN, Acer, or Lenovo.</span></li>
+    <li><span style='font-size:14px;font-family:"Arial","sans-serif"'>Chromebit: Asus.</span></li>
+    <li><span style='font-size:14px;font-family:"Arial","sans-serif"'>Chromebase: LG, Acer, or AOPEN.</span></li>
+    </ul>
+<p>For this guide, we will use an <b>Asus Chromebox</b>.</p>
+    <ul>
+    <li><span style='font-size:14px;font-family:"Arial","sans-serif"'>Display</span></li>
+    <ul>
+    <li><span style='font-size:14px;font-family:"Arial","sans-serif"'>With or without touch support (as long as it is HID compliant).</span></li>
+    <li><span style='font-size:14px;font-family:"Arial","sans-serif"'>1080p output over HDMI and DisplayPort interfaces.</span></li>
+    <li><span style='font-size:14px;font-family:"Arial","sans-serif"'>i3 and i7 Chromeboxes support full 4k resolution.</span></li>
+    </ul>
+    </ul>    
+                        
+</td>
+<td width="250" valign="top"><img src="images/getting-started.png" class="img-responsive" alt="Getting Started"></td>
+</tr>
+</table>
+<p><h4>Software</h4></p>
+<p>For software, you need a Google Device Management Account, a Chrome license(s) and a Chrome kiosk app:</p>   
+<p>For this guide, we will use a free 30 day trial; Google Device Management Account which we will create in our next step, hence we will not need a Chrome license(s).</p> 
+    <ul>                     
+    <li><span style='font-size:14px;font-family:"Arial","sans-serif"'>Chrome license (one per Chromebox). To purchase Chrome licenses, contact the Chrome or Google for Education team. You can also purchase Chrome Enterprise licenses online.</span></li>
+    <li><span style='font-size:14px;font-family:"Arial","sans-serif"'>Chrome kiosk app. You can use a Chrome kiosk app you have created or a Chrome kiosk app from the Chrome Web Store.</span></li>
+</ul>
+<p>For this guide, we will use the <a href="https://github.com/kibachia" target="_blank">Chrome Sign Builder</a> as our kiosk app, which is readily available in the <a href="https://github.com/kibachia" target="_blank">Chrome Web Store</a>.</p> 
+
+                    </div>
+
+                   <div id="management" class="col-lg-12 about">
+                        <h1>Google Device Management</h1>
+<p>With a Google Device Management Account you can manage Chrome devices and policies on devices that run Chrome as an operating system. These  devices include Chromebooks used as work computers. They also include Chromeboxes or Chromebits used for digital signage or single-purpose kiosk apps.</p>
+<p>From a cloud-based Admin console, enforce policies, install apps and extensions, connect devices to your VPN and Wi-Fi networks, and manage other features of Chrome.</p>
+<p><h4>Sign Up</h4></p>
+<p>For this guide we intend to manage a Chromebox remotely for the purpose of Digital Sinage.</p>
+<p>Once you click on <a href="https://github.com/kibachia" target="_blank">Sign Up</a>, a Sign-up page will open on a new tab similar to the image below.<br>Fill in all the required fields then click <b>ACCEPT AND CREATE YOUR ACCOUNT</b></p>
+<ul>                     
+    <li><span style='font-size:14px;font-family:"Arial","sans-serif"'>Do not forget to check the checkbox at the bottom of the form or the <b>ACCEPT AND CREATE YOUR ACCOUNT</b> button will be inactive.</span></li>
+</ul>
+<p><img src="images/signup.png" class="img-responsive" alt="Sign Up Form"></p>
+
+<p>&nbsp;</p>
+<p>Once you click <b>ACCEPT AND CREATE YOUR ACCOUNT</b> you will recieve an email containing a link to verify the email you used to signup.<br>On clicking the link provided in the email, it will verify your email and take you to another page for you to create a password for your new account.</p>
+<p><img src="images/password.png" class="img-responsive" alt="Password"></p>
+<p>Enter your desired password, repeat it then click <b>CREATE YOUR ACCOUNT</b> and you will be taken to a thank you page.<br> On the Thank you page, click <b>TAKE ME TO THE DEVICE MANAGEMENT CONSOLE</b>, You will then be redirected to a login page for you to log into the admin console of your new account.</p>
+
+<p>&nbsp;</p>
+<p><h4>Sign In</h4></p>
+<p>On the Thank you page, click <b>TAKE ME TO THE DEVICE MANAGEMENT CONSOLE</b>, You will then be redirected to a login page for you to log into the admin console of your new account.</p>
+<p>Sign in with your new Google Device Management account email address <b>(as seen in the above image)</b> and the password you created above.</p>
+
+<table>
+<tr>
+<td><img src="images/signin-email.png" class="img-responsive" alt="Getting Started"></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><img src="images/signin-password.png" class="img-responsive" alt="Getting Started"></td>
+</tr>
+</table>
+
+<p>&nbsp;</p>
+<p><h4>Admin Console</h4></p>
+<p>Once you complete your Sign in process, you will be redirected to the <b>Admin Console</b> similar to the image below.</p>
+
+<p>&nbsp;</p>
+<p><img src="images/admin-console.png" class="img-responsive" alt="Sign Up Form"></p>
+<p>
+<ul>                     
+    <li><span style='font-size:14px;font-family:"Arial","sans-serif"'>You have completed your first major milestone and now you are ready to start enrolling devices in our next step.</span></li>
+</ul>
+</p>                       
+
+                </div>
+
+
+                <div id="enrollment" class="col-lg-12 sections">
+                <h1>Device Enrollment</h1>
+<p>Each device will require user credentials even if it will be working as a display only kiosk with no user interaction.</p>
+<p>So, before we even enroll a device we will be required to create user credentials for that particular device.</p>
+
+<p><h4>Creating User(s)</h4></p>
+
+
+                        
+                    </div>
+
+
+                    <div id="Blood Donors" class="col-lg-12 sections">
+                        <h1>Chrome Sign Builder</h1>
+                        Blood Donors can register themseleves Dynamically. They just need to follow few steps and after completing their profile they can publish their profile<br><br>
+                        <p><span style='font-size:14px;font-family:"Arial","sans-serif";background:white;color:#333333;'> For admin to add new</span><span style='font-size:14px;font-family:"Arial","sans-serif";color:#333333;'>&nbsp;</span><strong><span style='font-size:14px;font-family:"Arial","sans-serif";color:#333333;'>Blood Donor&nbsp;</span></strong><span style='font-size:14px;font-family:"Arial","sans-serif";color:#333333;'>&nbsp;</span><span style='font-size:14px;font-family:"Arial","sans-serif";color:#333333;'>you should follow few steps :</span></p>
+
+<ul type="disc">
+    <li style='font-size:15px;font-family:"Calibri","sans-serif";color:#333333;background:white;'><span style='font-size:14px;font-family:"Arial","sans-serif";'>Click&nbsp;on <strong><span style='font-family:"Arial","sans-serif";'>Add Blood Donor</span></strong> from the top right corner.</span>
+    </li>
+    <li style='font-size:15px;font-family:"Calibri","sans-serif";color:#333333;background:white;'><span style='font-size:14px;font-family:"Arial","sans-serif";'>Give&nbsp;details</span></li>
+</ul>
+
+<p><span style='font-size:14px;font-family:"Arial","sans-serif";background:white;color:#333333;'>You can</span><span style='font-size:14px;font-family:"Arial","sans-serif";color:#333333;'>&nbsp;</span><strong><span style='font-size:14px;font-family:"Arial","sans-serif";color:#333333;'>Edit&nbsp;</span></strong><span style='font-size:14px;font-family:"Arial","sans-serif";color:#333333;'>or<strong><span style='font-family:"Arial","sans-serif";'>&nbsp;Remove&nbsp;</span></strong>Blood Donor by single.</span>
+</p>
+
+<p><span style='font-size:14px;font-family:"Arial","sans-serif";background:white;color:#333333;'>For&nbsp;</span><span style='font-size:14px;font-family:"Arial","sans-serif";'>Specialties, you must separate Specialties using comma and don&#39;t put any space after comma. You can add one or more award and if it is empty then no problem.</span></p>
+
+
+
+
+                    </div>
+
+
+                    <div id="Blood Group" class="col-lg-12 sections">
+                        <h1>Blood Group</h1>
+                        <p><span style='font-size:14px;font-family:"Arial","sans-serif";background:white;color:#333333;'>To add new</span><span style='font-size:14px;font-family:"Arial","sans-serif";color:#333333;'>&nbsp;</span><strong><span style='font-size:14px;font-family:"Arial","sans-serif";color:#333333;'>Blood Group</span></strong><span style='font-size:14px;font-family:"Arial","sans-serif";color:#333333;'>&nbsp;</span><span style='font-size:14px;font-family:"Arial","sans-serif";color:#333333;'>you should follow few steps :</span></p>
+
+<ul type="disc">
+    <li style='font-size:15px;font-family:"Calibri","sans-serif";color:#333333;background:white;'><span style='font-size:14px;font-family:"Arial","sans-serif";'>Click&nbsp;on <strong><span style='font-family:"Arial","sans-serif";'>Add Blood Group</span></strong> from the top right corner.</span>
+    </li>
+    <li style='font-size:15px;font-family:"Calibri","sans-serif";color:#333333;background:white;'><span style='font-size:14px;font-family:"Arial","sans-serif";'>Give&nbsp;Blood Group Name.</span></li>
+    <li style='font-size:15px;font-family:"Calibri","sans-serif";color:#333333;background:white;'><span style='font-size:14px;font-family:"Arial","sans-serif";'>Give&nbsp;Blood Group Slug in English using small caps letter.</span></li>
+</ul>
+
+<p><span style='font-size:14px;font-family:"Arial","sans-serif";color:#333333;'>You can</span><span style='font-size:14px;font-family:"Arial","sans-serif";color:#333333;'>&nbsp;</span><strong><span style='font-size:14px;font-family:"Arial","sans-serif";color:#333333;'>Edit&nbsp;</span></strong><span style='font-size:14px;font-family:"Arial","sans-serif";color:#333333;'>or<strong><span style='font-family:"Arial","sans-serif";'>&nbsp;Remove&nbsp;</span></strong>Blood Group by single click!</span>
+</p>
+
+                  
+                    </div>
+
+
+                    <div id="page" class="col-lg-12 sections">
+                        <h1>Page Settings</h1>
+                        <p>You can Enable or Disable About Us, FAQ and Contact us Page. Just need a single click. You can add multiple email for the Contact Us page email address. Just separate emails using comma and don't give any space.</p>
+
+
+                     
+                    
+                    </div>
+                    <div id="social" class="col-lg-12 sections">
+                        <h1>Social Settings</h1>
+                        <p><strong>BloodBank&nbsp;</strong>allows you to add social links in your website very easily. You just need to put the link. If you want to disable any social media then you can do it by single click and it will not appear in the Website. You can Enable it again by single click.</p>
+
+
+                     
+                    
+                    </div>
+
+                    <div id="ads" class="col-lg-12 sections">
+                        <h1>Advertisements</h1>
+                        <p>BloodBank offers two type of Advertisement support. You can add advertisement by code or you can add advertisement by banner and advertisement URL. To add advertisement first click on Add New Advertisement button then select Advertisement type then complete the simple steps.
+<br><br>Administrator can Edit, Deactivate or Remove advertisements by single click and Deactivated advertisements can be Activated by single click too.
+</p>
+
+
+                     
+                    </div>
+
+                    <div id="seo" class="col-lg-12 sections">
+                        <h1>SEO Tools</h1>
+                        <h4><strong>Google Analytics</strong></h4>
+                        <p>BloodBank offers you easily  Google Analytics integration system, it is a freemium web analytics service offered by Google that tracks and reports website traffic. You just need to put your Google Analytics script in the form and everything will be done.</p>
+
+                        <h4><strong>Meta Keywords</strong></h4>
+                        <p>You can add meta keywords in your website by writing them in this form. Every keyword must be separated using comma. It will help you for better SEO.<br><br>
+N.B. Please don't use any space after comma.
+</p>
+
+
+                
+                    </div>
+
+                    <div id="settings" class="col-lg-12 sections">
+                        <h1>General Settings</h1>
+                        <p><strong><span style='font-size:14px;font-family:"Arial","sans-serif";background:white;color:#333333;'>General Settings&nbsp;</span></strong><span style='font-size:14px;font-family:"Arial","sans-serif";color:#333333;'>is one of the most important option for your website. There are many options which is very simple to complete. Here are the features of the General Settings :</span></p>
+
+<ul type="disc">
+    <li style='font-size:15px;font-family:"Calibri","sans-serif";color:#333333;background:white;'><strong><span style='font-size:14px;font-family:"Arial","sans-serif";'>Logo Setting : &nbsp;</span></strong><span style='font-size:14px;font-family:"Arial","sans-serif";'>You can upload&nbsp;your logo from here. Logo width should be 280px or less.</span></li>
+   
+    <li style='font-size:15px;font-family:"Calibri","sans-serif";color:#333333;background:white;'><strong><span style='font-size:14px;font-family:"Arial","sans-serif";'>Background Image :</span></strong><span style='font-size:14px;font-family:     "Arial","sans-serif";'>&nbsp;</span><span style='font-size:14px;font-family:"Arial","sans-serif";'>&nbsp;This image will be shown as background&nbsp;image.</span></li>
+</ul>
+
+<p><span style='font-size:14px;font-family:"Arial","sans-serif";background:white;color:#333333;'>&nbsp;For&nbsp;</span><strong><span style='font-size:14px;font-family:"Arial","sans-serif";color:#333333;'>About Us, Office Address&nbsp;</span></strong><span style='font-size:14px;font-family:"Arial","sans-serif";color:#333333;'>and</span><strong><span style='font-size:14px;font-family:"Arial","sans-serif";color:#333333;'>&nbsp;Footer&nbsp;</span></strong><span style='font-size:14px;font-family:"Arial","sans-serif";color:#333333;'>you just need to fill the forms and everything will be setup in the front page.</span></p>
+
+
+                   
+                        
+                    </div>
+
+                  
+
+
+                    <div id="subscribers" class="col-lg-12 sections">
+                        <h1>Subscribers</h1>
+                        <p>You can see all the subscribers of your website in the Subscribers section. You can <strong>download</strong> the list by <strong>single click</strong> in .csv format.</p>
+
+                        
+                    </div>
+
+
+
+
+                    <div id="developer" class="col-lg-12 about" style="height: 560px;">
+                        <h1>Developer Support</h1>
+                        <p>We are always happy to hear from you. Please feel free to contact us for any kind of customization, support, query and suggestion. We will respond as soon as possible.</p>
+
+                        <p>Thank you,</p>
+
+                        <p><a href="http://geniusocean.com" target="_blank"><strong>GeniusOcean</strong></a></p>
+
+                        <p><strong>Email:</strong> <a style="text-decoration: none;" href="mailto:admin@geniusocean.com?subject=Support For NewsOcean">admin@geniusocean.com</a>
+                        </p>
+                        <p style="width: 200px" class="text-center"><strong>Or</strong></p>
+                        <a href="http://geniusocean.com/contact" class="btn go-btn" target="_blank"><strong>Contact Us</strong></a>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.smooth-scroll.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+          $('body').smoothScroll({
+            delegateSelector: 'ul.sidebar-nav a'
+          });
+
+
+
+        });
+      </script>
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
