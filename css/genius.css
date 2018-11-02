@@ -59,13 +59,13 @@
  }
 .about a{
     text-decoration: none;
-    color: #d90000;
+    color: #1B9BC8;
  }
 .go-btn{
     width: 200px;
     color: #FFF!important; 
-    background-color: #d90000;
-    border:1px solid #d90000;
+    background-color: #1B9BC8;
+    border:1px solid #1B9BC8;
 }
 
 .sections img{
@@ -108,7 +108,7 @@
     text-decoration: none;
     color: #FFFFFF;
     font-weight: 700;
-    background: #d90000;
+    background: #1B9BC8;
 }
 
 .sidebar-nav li a:active,
